@@ -1,0 +1,40 @@
+.container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+
+.button-group {
+  display: flex; /* Flex container */
+  flex-direction: column; /* Stack the buttons vertically */
+  align-items: center; /* Center the buttons horizontally */
+  margin-bottom: 20px;
+}
+
+.switch-btn {
+  background-color: #3498db;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px 0; /* Vertical spacing between buttons */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  display: inline-block;
+}
+
+.switch-btn:hover {
+  background-color: #2980b9;
+}
+
+.component-view {
+  margin: 0 20px;
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+  background-color: #f8f8f8;
+  min-height: 150px;
+}

@@ -1,0 +1,131 @@
+<div class="card text-light">
+  <div class="card-body">
+    <form [formGroup]="gridForm">
+      <div class="row g-3">
+        <div class="col-12 col-md-2">
+          <label class="form-label">Compact type</label>
+          <select
+            class="form-select bg-dark text-light"
+            formControlName="compactType"
+          >
+            <option *ngFor="let type of compactTypes" [value]="type">
+              {{ type | titlecase }}
+            </option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-2">
+          <label class="form-label">Columns</label>
+          <input
+            type="number"
+            class="form-control bg-dark text-light"
+            formControlName="columns"
+          />
+        </div>
+
+        <div class="col-12 col-md-2">
+          <label class="form-label">Row height</label>
+          <input
+            type="number"
+            class="form-control bg-dark text-light"
+            formControlName="rowHeight"
+          />
+        </div>
+
+        <div class="col-12 col-md-2">
+          <label class="form-label">Gap</label>
+          <input
+            type="number"
+            class="form-control bg-dark text-light"
+            formControlName="gap"
+          />
+        </div>
+
+        <div class="col-12 col-md-4">
+          <label class="form-label">Transition type</label>
+          <select
+            class="form-select bg-dark text-light"
+            formControlName="transitionType"
+          >
+            <option *ngFor="let type of transitionTypes" [value]="type">
+              {{ type | titlecase }}
+            </option>
+          </select>
+        </div>
+
+        <div class="col-2" *ngFor="let opt of behaviorCheckboxes">
+          <div class="form-check">
+            <input
+              type="checkbox"
+              class="form-check-input"
+              [formControlName]="opt.controlName"
+              [id]="opt.controlName"
+            />
+            <label class="form-check-label" [for]="opt.controlName">{{
+              opt.label
+            }}</label>
+          </div>
+        </div>
+
+        <div class="col-6"></div>
+
+        <div class="col-12 col-md-3">
+          <label class="form-label">Show grid lines</label>
+          <select
+            class="form-select bg-dark text-light"
+            formControlName="showGrid"
+          >
+            <option *ngFor="let opt of showGridOptions" [value]="opt">
+              {{ (opt == "whenDragging" ? "When Dragging" : opt) | titlecase }}
+            </option>
+          </select>
+        </div>
+
+        <div class="col-12 col-md-2">
+          <label class="form-label">Border px</label>
+          <input
+            type="number"
+            class="form-control bg-dark text-light"
+            formControlName="borderWidth"
+          />
+        </div>
+
+        <div class="col-12 col-md-1">
+          <label class="form-label">Border</label>
+          <input
+            type="color"
+            class="form-control form-control-color p-0"
+            formControlName="borderColor"
+          />
+        </div>
+
+        <div class="col-12 col-md-2">
+          <label class="form-label">Gap</label>
+          <input
+            type="color"
+            class="form-control form-control-color p-0"
+            formControlName="gapColor"
+          />
+        </div>
+
+        <div class="col-12 col-md-2">
+          <label class="form-label">Row</label>
+          <input
+            type="color"
+            class="form-control form-control-color p-0"
+            formControlName="rowColor"
+          />
+        </div>
+
+        <div class="col-12 col-md-2">
+          <label class="form-label">Column</label>
+          <input
+            type="color"
+            class="form-control form-control-color p-0"
+            formControlName="columnColor"
+          />
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="button-group">
+    @for (c of components; track $index) {
+    <button (click)="selectComponent(c.component)" class="switch-btn">
+      {{ c.name }}
+    </button>
+    }
+  </div>
+
+  <div class="component-view">
+    <ng-container *ngComponentOutlet="selectedComponent"></ng-container>
+  </div>
+</div>

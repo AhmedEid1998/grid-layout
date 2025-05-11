@@ -1,0 +1,42 @@
+:host .card {
+  background-color: transparent;
+  input,
+  select {
+    border-color: gray;
+    &:focus {
+      box-shadow: none;
+      outline: none;
+    }
+  }
+
+  input[type="color"] {
+    border-color: gray;
+  }
+
+  input[type="checkbox"] {
+    background-color: transparent;
+    border-radius: 2px;
+    padding: 4px;
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: 0 0 20px 2px rgba(255, 152, 0, 0.8);
+    }
+  }
+
+  input:checked[type="checkbox"] {
+    border-color: #ff9800;
+    background-color: #ff9800;
+    color: black;
+    box-shadow: none;
+
+    &:focus {
+      box-shadow: 0 0 20px 2px rgba(255, 152, 0, 0.8);
+    }
+  }
+
+  .form-check-input,
+  .form-check-label {
+    cursor: pointer;
+  }
+}

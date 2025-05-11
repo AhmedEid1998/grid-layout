@@ -1,0 +1,55 @@
+[
+  { "id": "1", "x": 0, "y": 0, "w": 2, "h": 4, "compName": "GridOneComponent" },
+  { "id": "2", "x": 2, "y": 0, "w": 3, "h": 2, "compName": "GridTwoComponent" },
+  {
+    "id": "3",
+    "x": 5,
+    "y": 0,
+    "w": 2,
+    "h": 3,
+    "compName": "GridThreeComponent"
+  },
+  {
+    "id": "4",
+    "x": 7,
+    "y": 0,
+    "w": 1,
+    "h": 3,
+    "compName": "GridFourComponent"
+  },
+  {
+    "id": "5",
+    "x": 9,
+    "y": 0,
+    "w": 2,
+    "h": 4,
+    "compName": "GridFiveComponent"
+  },
+  { "id": "6", "x": 0, "y": 4, "w": 1, "h": 3, "compName": "GridOneComponent" },
+  { "id": "7", "x": 2, "y": 2, "w": 1, "h": 2, "compName": "GridTwoComponent" },
+  {
+    "id": "8",
+    "x": 3,
+    "y": 2,
+    "w": 2,
+    "h": 5,
+    "compName": "GridThreeComponent"
+  },
+  {
+    "id": "9",
+    "x": 3,
+    "y": 7,
+    "w": 1,
+    "h": 2,
+    "compName": "GridFourComponent"
+  },
+  {
+    "id": "10",
+    "x": 5,
+    "y": 3,
+    "w": 2,
+    "h": 3,
+    "compName": "GridFiveComponent"
+  },
+  { "id": "11", "x": 9, "y": 4, "w": 2, "h": 2, "compName": "GridOneComponent" }
+]

@@ -1,0 +1,43 @@
+<div style="background-color: #000">
+  <app-grid-settings
+    (gridFormChange)="onGridFormChange($event)"
+  ></app-grid-settings>
+</div>
+<div style="background-color: #000; padding: 20px">
+  <app-custom-layout
+    [layout]="layout"
+    [cols]="cols"
+    [rowHeight]="rowHeight"
+    [gap]="gap"
+    [componentMap]="componentMap"
+    [compactType]="compactType"
+  ></app-custom-layout>
+
+  <!-- <ktd-grid
+    [compactType]="compactType"
+    [cols]="cols"
+    [rowHeight]="rowHeight"
+    [layout]="layout"
+    [gap]="gap"
+    [backgroundConfig]="backgroundConfig"
+    (layoutUpdated)="onLayoutUpdated($event)"
+    (dragStarted)="setDragging(true)"
+    (dragEnded)="setDragging(false)"
+  >
+    @for (item of layout; track trackById(item.id); let index = $index) {
+    <ktd-grid-item
+      [id]="item.id"
+      [style.cursor]="cursorStyle"
+      [draggable]="!disableDrag"
+      [resizable]="!disableResize"
+    >
+      @if (!disableRemove) {
+      <button class="remove-btn" (click)="removeItem(index)">×</button>
+      }
+      <ng-container
+        *ngComponentOutlet="item.compName ? componentMap[item.compName] : null"
+      ></ng-container>
+    </ktd-grid-item>
+    }
+  </ktd-grid> -->
+</div>
